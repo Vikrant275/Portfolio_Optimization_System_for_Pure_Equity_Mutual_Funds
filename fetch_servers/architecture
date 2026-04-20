@@ -1,0 +1,16 @@
+Client (ML Pipeline / User)
+        ↓
+Login (Username + Password)
+        ↓
+JWT Token
+        ↓
+API Gateway (Flask App)
+        ↓
+Auth Layer (JWT / API Key)
+        ↓
+----------------------------
+| Risk Service             |
+| Audit Service            |
+----------------------------
+        ↓
+Response (JSON)

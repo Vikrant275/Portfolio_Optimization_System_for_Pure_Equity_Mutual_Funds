@@ -1,0 +1,17 @@
+setuptools
+pyyaml
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+yfinance
+python-dotenv
+requests
+flask
+flask-jwt-extended
+werkzeug
+flask_limiter
+
+
+
