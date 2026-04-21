@@ -15,3 +15,17 @@ constants for trading data dir
 TRADING_DATA_DIR = 'Trading_data'
 STOCK_DATA_FILE = 'Stock.csv'
 INDEX_DATA_FILE = 'Index.csv'
+
+'''
+constants for risk data dir 
+'''
+
+RISK_DATA_DIR = 'Risk_data'
+RISK_DATA_FILE = 'Risk.csv'
+
+'''
+constant for Audit data dir
+'''
+
+AUDIT_DATA_DIR = 'Audit_data'
+AUDIT_DATA_FILE = 'Audit.csv'

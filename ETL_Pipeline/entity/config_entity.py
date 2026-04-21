@@ -23,4 +23,25 @@ class TradingDataConfig:
         except Exception as e:
             raise MyException(e,sys)
 
+class RiskDataConfig:
+    def __init__(self,etl_pipeline_config:ETL_Pipeline_Data):
+        try:
+            self.etl_pipeline_config = etl_pipeline_config
+            self.risk_data_dir = os.path.join(self.etl_pipeline_config.data_path,RISK_DATA_DIR)
+            self.risk_data_file_path = os.path.join(self.risk_data_dir,RISK_DATA_FILE)
+
+        except Exception as e:
+            raise MyException(e,sys)
+
+
+class AuditDataConfig:
+    def __init__(self,etl_pipeline_config:ETL_Pipeline_Data):
+        try:
+            self.etl_pipeline_config = etl_pipeline_config
+            self.audit_data_dir = os.path.join(self.etl_pipeline_config.data_path,AUDIT_DATA_DIR)
+            self.audit_file_path = os.path.join(self.audit_data_dir,AUDIT_DATA_FILE)
+
+        except Exception as e:
+            raise MyException(e,sys)
+
 

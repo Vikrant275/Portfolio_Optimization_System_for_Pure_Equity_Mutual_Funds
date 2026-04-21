@@ -11,8 +11,8 @@ def login(username,password):
             f"{URL}/login",
             json={'username':username, 'password':password}
         )
-        print(res.json())
         return res.json()['token']
+
     except Exception as e:
         logging.error(e)
         raise MyException(e,sys)
