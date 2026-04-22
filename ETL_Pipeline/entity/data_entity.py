@@ -12,3 +12,7 @@ class Risk_data:
 @dataclass
 class Audit_data:
     audit_file_path: str
+
+@dataclass
+class Final_data:
+    Final_df: str

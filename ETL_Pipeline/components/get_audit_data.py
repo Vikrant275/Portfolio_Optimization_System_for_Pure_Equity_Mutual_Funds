@@ -29,7 +29,7 @@ class GetAuditData:
             data = pd.DataFrame([data_json])
             logging.info('successfully convert audit data to dataframe')
 
-            data['star_date'] = start_date
+            data['start_date'] = start_date
             data['end_date'] = end_date
 
             os.makedirs(self.audit_data_config.audit_data_dir, exist_ok=True)

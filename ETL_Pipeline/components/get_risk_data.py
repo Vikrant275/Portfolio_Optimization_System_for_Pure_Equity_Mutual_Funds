@@ -31,7 +31,7 @@ class GetRiskData:
             data = pd.DataFrame([data_json])
             logging.info("convert json to pandas dataframe")
 
-            data['star_date'] = start_date
+            data['start_date'] = start_date
             data['end_date'] = end_date
 
             os.makedirs(self.risk_data_config.risk_data_dir, exist_ok=True)

@@ -19,7 +19,7 @@ class GetTradingData:
 
     def get_trading_data(self,stock,start,end) -> Trading_data :
         try:
-            stock_df = yf.download(f"{stock}.NS", start=start, end=end)
+            stock_df = yf.download(f"{stock}.NS", start=start, end=end,interval='1d')
 
             if stock_df.empty:
                 logging.fatal(f"No data found for {stock} for {start} to {end}")
@@ -33,7 +33,7 @@ class GetTradingData:
 
             stock_df.reset_index(inplace=True)
             market_df.reset_index(inplace=True)
-            stock_df['Stock'] = stock
+            stock_df['stock'] = stock
 
 
 

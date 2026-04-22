@@ -29,3 +29,9 @@ constant for Audit data dir
 
 AUDIT_DATA_DIR = 'Audit_data'
 AUDIT_DATA_FILE = 'Audit.csv'
+
+'''
+constants for Portfolio data dir
+'''
+FINAL_DATAFRAME = 'Final_data'
+FINAL_DATAFRAME_FILE = 'Final_data.csv'
